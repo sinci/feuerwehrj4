@@ -40,11 +40,9 @@ $icon = $this->params->get('contact_icons') == 0;
 			</dd>
 		<?php endif; ?>
 
-		<?php if ($this->item->suburb && $this->params->get('show_suburb')) : ?>
+		<?php if ($this->item->suburb && $this->params->get('show_suburb')): ?>
 			<dd>
-				<span class="contact-suburb" itemprop="addressLocality">
-					<?php echo $this->item->suburb; ?>
-				</span>
+				<span class="contact-postcode" itemprop="postalCode"><?php echo $this->item->postcode; ?></span> <span class="contact-suburb" itemprop="addressLocality"><?php echo $this->item->suburb; ?></span>
 			</dd>
 		<?php endif; ?>
 		<?php if ($this->item->state && $this->params->get('show_state')) : ?>
@@ -54,13 +52,7 @@ $icon = $this->params->get('contact_icons') == 0;
 				</span>
 			</dd>
 		<?php endif; ?>
-		<?php if ($this->item->postcode && $this->params->get('show_postcode')) : ?>
-			<dd>
-				<span class="contact-postcode" itemprop="postalCode">
-					<?php echo $this->item->postcode; ?>
-				</span>
-			</dd>
-		<?php endif; ?>
+
 		<?php if ($this->item->country && $this->params->get('show_country')) : ?>
 			<dd>
 				<span class="contact-country" itemprop="addressCountry">

@@ -184,7 +184,7 @@ else
 </div><!-- .uk-container -->
 
 <?php if ($this->countModules('footer-a', true)) : ?>
-<footer class="container-footer uk-background-secondary uk-text-muted uk-padding">
+<footer class="container-footer uk-background-secondary uk-text-muted uk-padding uk-margin-top">
 	<div class="uk-container">
 		<div uk-grid>
 
