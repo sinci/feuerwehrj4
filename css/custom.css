@@ -237,6 +237,10 @@ span.field-label {
     font-weight: 400;
 }
 
+form#contact-form .control-group {
+    margin-bottom: 10px;
+}
+
 
 /* SIDEBAR
 ****************************************************/
