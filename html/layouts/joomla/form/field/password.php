@@ -148,12 +148,13 @@ if ($rules)
 	<div class="input-group">
 		<input
 			type="password"
+			class="uk-input"
 			name="<?php echo $name; ?>"
 			id="<?php echo $id; ?>"
 			value="<?php echo htmlspecialchars($value, ENT_COMPAT, 'UTF-8'); ?>"
 			<?php echo implode(' ', $attributes); ?>>
 		<?php if (!$lock): ?>
-		<button type="button" class="btn btn-secondary input-password-toggle">
+		<button type="button" class="btn btn-secondary input-password-toggle uk-button uk-button-default">
 			<span class="icon-eye icon-fw" aria-hidden="true"></span>
 			<span class="visually-hidden"><?php echo Text::_('JSHOWPASSWORD'); ?></span>
 		</button>
