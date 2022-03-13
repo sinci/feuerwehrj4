@@ -34,7 +34,7 @@ HTMLHelper::_('behavior.keepalive');
 	</ul>
 <?php endif; ?>
 	<div class="mod-login-logout__button logout-button">
-		<button type="submit" name="Submit" class="btn btn-primary"><?php echo Text::_('JLOGOUT'); ?></button>
+		<button type="submit" name="Submit" class="btn btn-primary uk-button uk-button-secondary"><?php echo Text::_('JLOGOUT'); ?></button>
 		<input type="hidden" name="option" value="com_users">
 		<input type="hidden" name="task" value="user.logout">
 		<input type="hidden" name="return" value="<?php echo $return; ?>">
