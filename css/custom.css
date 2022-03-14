@@ -111,9 +111,32 @@ ul.uk-subnav.uk-subnav-pill {
     background-color: #D63B37;
 }
 
+.form-select {
+    max-width: 100%;
+    width: 100%;
+    border: 0 none;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: .2s ease-in-out;
+    transition-property: color, background-color, border;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 
 /* HEADER
 ****************************************************/
+
+.uk-search-input {
+    text-indent: 25px;
+}
+
+.uk-search-default {
+    width: auto;
+}
 
 .jm-toolbar.uk-clearfix {
     padding: 5px 0;

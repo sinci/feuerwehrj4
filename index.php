@@ -83,7 +83,8 @@ else
 
 					<?php if ($this->countModules('toolbar-right',true)) : ?>
 						<div class="uk-float-right">
-							<jdoc:include type="modules" name="toolbar-right" style="none"/>
+							<div class="uk-display-inline-block"><jdoc:include type="modules" name="toolbar-right" style="none"/></div>
+							<div class="uk-display-inline-block"><jdoc:include type="modules" name="search" style="none" /></div>
 						</div>
 					<?php endif; ?>
 				</div>
@@ -127,15 +128,10 @@ else
 						</div>
 					<?php endif; ?>
 
-					<?php if ($this->countModules('menu', true) or $this->countModules('search', true)) : ?>
+					<?php if ($this->countModules('menu', true)): ?>
 						<div class="uk-navbar-right uk-visible@m">
 							<?php if ($this->countModules('menu', true)) : ?>
 								<jdoc:include type="modules" name="menu" style="none" />
-							<?php endif; ?>
-							<?php if ($this->countModules('search', true)) : ?>
-								<div class="container-search">
-									<jdoc:include type="modules" name="search" style="none" />
-								</div>
 							<?php endif; ?>
 						</div>
 					<?php endif; ?>
@@ -233,18 +229,11 @@ else
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
-        <?php if ($this->countModules('mobile', true) || $this->countModules('search', true)) : ?>
-					
+        <?php if ($this->countModules('mobile', true)) : ?>		
 			<?php if ($this->countModules('mobile', true)) : ?>
 				<button class="uk-offcanvas-close" type="button" uk-close></button>
 				<jdoc:include type="modules" name="mobile" style="none" />
-			<?php endif; ?>
-			<?php if ($this->countModules('search', true)) : ?>
-				<div class="container-search">
-					<jdoc:include type="modules" name="search" style="none" />
-				</div>
-			<?php endif; ?>
-					
+			<?php endif; ?>					
 		<?php endif; ?>
     </div>
 </div>
