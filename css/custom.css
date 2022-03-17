@@ -302,7 +302,16 @@ form#contact-form .control-group {
 
 
 /* MOBILE DEVICE
-****************************************************/
+****************** **********************************/
+
+.uk-offcanvas-bar .nav-item:first-child,
+.uk-offcanvas-bar .uk-navbar-dropdown .nav-item {
+    border-top: none;
+}
+
+.uk-offcanvas-bar .nav-item {
+    border-top: 1px solid rgba(232, 232, 232, 0.20);
+}
 
 .uk-navbar-toggle {
     color: #fff;
@@ -343,6 +352,12 @@ form#contact-form .control-group {
     }
     .blog-items.columns-4 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .uk-navbar-dropdown .uk-navbar-dropdown {
+        display: block;
+        position: inherit;
+        background: transparent;
+        padding: 5px 10px;
     }
 }
 
