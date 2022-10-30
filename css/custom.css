@@ -35,13 +35,22 @@
     /* Legacy iOS */
 }
 
+:root {
+    --link-color: #D63B37;
+    --secondary-color: #dbdbdb;
+    --body-fonts: "Roboto", Helvetica, Arial, sans-serif;
+    --font-weight: 300;
+    --background-default: #f5f5f5;
+    --background-secondary: #313232;
+}
+
 
 /* LAYOUT
 ****************************************************/
 
 html {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-family: var(--body-fonts);
+    font-weight: var(--font-weight);
 }
 
 .uk-h1,
@@ -59,7 +68,7 @@ h6,
 .uk-navbar-item,
 .uk-navbar-nav>li>a,
 .uk-navbar-toggle {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: var(--body-fonts);
 }
 
 .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
@@ -70,7 +79,7 @@ a,
 .uk-link,
 .uk-article-meta a,
 .uk-subnav-pill>*>:first-child {
-    color: #d63b37;
+    color: var(--link-color);
 }
 
 .uk-subnav-pill>*>:first-child {
@@ -92,11 +101,11 @@ ul.uk-subnav.uk-subnav-pill {
 
 .uk-background-secondary,
 .uk-navbar-container:not(.uk-navbar-transparent) {
-    background: #313232;
+    background: var(--background-secondary);
 }
 
 .uk-text-muted {
-    color: #dbdbdb !important;
+    color: var(--secondary-color) !important;
 }
 
 .uk-grid {
@@ -108,7 +117,7 @@ ul.uk-subnav.uk-subnav-pill {
 }
 
 .uk-label-danger {
-    background-color: #D63B37;
+    background-color: var(--link-color);
 }
 
 .form-select {
@@ -173,7 +182,7 @@ a.uk-navbar-item.uk-logo {
 .uk-navbar-nav>li>.uk-open>a,
 .uk-navbar-nav>li>a[aria-expanded=true],
 li.nav-item.active.deeper.parent {
-    background: #D63B37;
+    background: var(--link-color);
     color: #ffffff;
 }
 
@@ -182,7 +191,7 @@ li.nav-item.active.deeper.parent {
 }
 
 .uk-navbar-dropdown {
-    background: #D63B37;
+    background: var(--link-color);
     box-shadow: none;
     padding: 10px 15px;
 }
@@ -273,7 +282,7 @@ form#contact-form .control-group {
 }
 
 .sidebar-right .moduletable {
-    background: #f5f5f5;
+    background: var(--background-default);
     padding: 20px;
     margin: 20px 0;
 }
@@ -284,13 +293,13 @@ form#contact-form .control-group {
 
 .container-footer .uk-h3,
 .container-footer h3 {
-    color: #dbdbdb;
+    color: var(--secondary-color);
 }
 
 .footer-menu .uk-navbar-nav>li>a {
     min-height: auto;
     text-transform: none;
-    color: #dbdbdb;
+    color: var(--secondary-color);
 }
 
 .footer-menu .uk-navbar-nav>li>a:hover,
