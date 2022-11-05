@@ -165,10 +165,11 @@ else
 			<?php endif; ?>
 		<?php else:?>
 			<div class="uk-width-1-1@m">
-					
+					<?php if ($this->countModules('main-top', true)) : ?>
+						<jdoc:include type="modules" name="main-top" style="html5" />
+					<?php endif; ?>
 					<jdoc:include type="modules" name="breadcrumbs" style="none" />
 					<jdoc:include type="message" />
-					<jdoc:include type="modules" name="main-top" style="html5" />
 					<main>
 					<jdoc:include type="component" />
 					</main>
@@ -179,7 +180,6 @@ else
 	</div><!-- uk-grid -->
 </div><!-- .uk-container -->
 
-<?php if ($this->countModules('footer-a', true)) : ?>
 <footer class="container-footer uk-background-secondary uk-text-muted uk-padding uk-margin-top">
 	<div class="uk-container">
 		<div uk-grid>
@@ -220,21 +220,17 @@ else
 	<div class="uk-flex uk-flex-center uk-margin-top">
 	<small>Designed by <a href="http://www.sinci.at">sinci</a> Powered by <a href="https://getuikit.com/">Ulkit</a></small>
 	</div>
-
 </footer>
-<?php endif; ?>
 
 <jdoc:include type="modules" name="debug" style="none" />
 </div><!-- #page -->
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
-        <?php if ($this->countModules('mobile', true)) : ?>		
 			<?php if ($this->countModules('mobile', true)) : ?>
 				<button class="uk-offcanvas-close" type="button" uk-close></button>
 				<jdoc:include type="modules" name="mobile" style="none" />
 			<?php endif; ?>					
-		<?php endif; ?>
     </div>
 </div>
 
