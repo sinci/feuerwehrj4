@@ -36,5 +36,5 @@ use Joomla\CMS\Layout\LayoutHelper;
 	<?php else : ?>
 		<?php echo $item->title; ?>
 	<?php endif; ?>
-	<?php echo $item_heading; ?>
+	</<?php echo $item_heading; ?>>
 <?php endif; ?>
