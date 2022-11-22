@@ -49,7 +49,7 @@ if ($value)
 		);
 	}
 	
-	echo "<div uk-lightbox><div><a href='/".$imgUrl."'>";
+	echo "<div uk-lightbox><a href='/".$imgUrl."'>";
 	echo $buffer;
-	echo "</a></div></div>";
+	echo "</a></div>";
 }
