@@ -140,7 +140,6 @@ else
 		</div><!-- end .uk-navbar-container -->		
 	</header>
 
-
 <div class="uk-container uk-margin-top">
 	<div uk-grid>
 		<?php if ($this->countModules('sidebar-left') || $this->countModules('sidebar-right', true)) :?>

@@ -225,6 +225,11 @@ a.uk-position-center-right.uk-position-small.uk-hidden-hover.uk-icon.uk-slidenav
     padding: 10px 15px;
 }
 
+body.site.com_finder .moduletable.slidemodul,
+body.site.com_users .moduletable.slidemodul {
+    display: none;
+}
+
 .page-item.active .page-link {
     background-color: #ccc;
     color: #fff;
