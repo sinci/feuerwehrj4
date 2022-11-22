@@ -234,6 +234,6 @@ else
 			<?php endif; ?>					
     </div>
 </div>
-
+<script src="<?php echo $this->baseurl ?>/templates/feuerwehrj4/js/custom.js"></script>
 </body>
 </html>
