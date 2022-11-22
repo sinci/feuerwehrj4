@@ -151,7 +151,9 @@ else
 			<?php endif; ?>
 			<div class="uk-width-expand@m">
 				<jdoc:include type="modules" name="breadcrumbs" style="none" />
-				<jdoc:include type="modules" name="main-top" style="html5" />
+				<?php if ($this->countModules('main-top', true)) : ?>
+					<jdoc:include type="modules" name="main-top" style="html5" />
+				<?php endif;?>
 				<jdoc:include type="message" />
 				<main>
 				<jdoc:include type="component" />
