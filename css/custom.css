@@ -294,6 +294,11 @@ form#contact-form .control-group {
   margin: 20px 0;
 }
 
+.plg_system_webauthn_login_button svg {
+  margin: 4px;
+  width: 30px;
+}
+
 /* FOOTER
 ****************************************************/
 
