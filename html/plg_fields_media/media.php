@@ -52,4 +52,7 @@ if ($value)
 	echo "<div uk-lightbox><a href='/".$imgUrl."'>";
 	echo $buffer;
 	echo "</a></div>";
+
+
 }
+
