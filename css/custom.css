@@ -320,8 +320,13 @@ form#contact-form .control-group {
   background: transparent;
 }
 
-/* DEVICE
+/* MOBILE-DEVICE
 ****************** **********************************/
+
+
+li:hover > a span.uk-icon {
+  transform: rotateX(180deg);
+}
 
 .uk-offcanvas-bar .nav-item:first-child,
 .uk-offcanvas-bar .uk-navbar-dropdown .nav-item {
@@ -415,3 +420,5 @@ form#contact-form .control-group {
 
 @media (min-width: 960px) and (max-width: 1199px) {
 }
+
+
