@@ -53,7 +53,7 @@ Text::script('JHIDEPASSWORD');
                 <div class="input-group">
                     <input class="uk-input" id="modlgn-passwd-<?php echo $module->id; ?>" type="password" name="password" autocomplete="current-password" class="form-control" placeholder="<?php echo Text::_('JGLOBAL_PASSWORD'); ?>">
                     <label for="modlgn-passwd-<?php echo $module->id; ?>" class="visually-hidden"><?php echo Text::_('JGLOBAL_PASSWORD'); ?></label>
-                    <button type="button" class="btn btn-secondary input-password-toggle uk-button uk-button-secondary">
+                    <button type="button" class="btn btn-secondary input-password-toggle uk-button uk-button-default">
                         <span class="icon-eye icon-fw" aria-hidden="true"></span>
                         <span class="visually-hidden"><?php echo Text::_('JSHOWPASSWORD'); ?></span>
                     </button>
@@ -105,7 +105,7 @@ Text::script('JHIDEPASSWORD');
         <?php endforeach; ?>
 
         <div class="mod-login__submit form-group">
-            <button type="submit" name="Submit" class="btn btn-primary w-100 uk-button uk-button-secondary uk-margin-top"><?php echo Text::_('JLOGIN'); ?></button>
+            <button type="submit" name="Submit" class="btn btn-primary w-100 uk-button uk-button-default uk-margin-top"><?php echo Text::_('JLOGIN'); ?></button>
         </div>
 
         <?php
