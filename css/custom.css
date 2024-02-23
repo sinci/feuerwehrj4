@@ -1,4 +1,4 @@
-/* Custom CSS Sinci
+/* Custom CSS Feuerwehr-Joomla
 ****************************************************/
 
 /* roboto-300 - latin */
@@ -238,6 +238,9 @@ body.site.com_users .moduletable.slidemodul {
   background-color: #ccc;
   color: #fff;
   z-index: 3;
+}
+.uk-article-meta {
+  margin-top: -15px;
 }
 
 .icon-angle-left:before {
