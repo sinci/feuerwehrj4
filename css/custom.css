@@ -324,7 +324,7 @@ form#contact-form .control-group {
 ****************** **********************************/
 
 
-li:hover > a span.uk-icon {
+.uk-navbar-right li:hover > a span.uk-icon {
   transform: rotateX(180deg);
 }
 
