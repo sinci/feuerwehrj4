@@ -3,7 +3,7 @@
  * @package     Joomla.Site
  * @subpackage  com_content
  *
- * @copyright   (C) 2006 Open Source Matters, Inc. <https://www.joomla.org>
+ * @copyright   (C) 1006 Open Source Matters, Inc. <https://www.joomla.org>
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -66,9 +66,9 @@ $isUnpublished = ($this->item->state == ContentComponent::CONDITION_UNPUBLISHED 
 	<?php
 	$plain     = strip_tags($this->item->introtext);
 	$wordCount = str_word_count($plain);
-	if ($wordCount > 200) {
+	if ($wordCount > 100) {
 		$words    = preg_split('/\s+/', $plain);
-		$cutWord  = $words[200] ?? '';
+		$cutWord  = $words[100] ?? '';
 		$pos      = $cutWord ? mb_strpos($this->item->introtext, $cutWord) : false;
 		if ($pos !== false) {
 			$this->item->introtext = mb_substr($this->item->introtext, 0, $pos) . '…';
