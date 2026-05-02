@@ -9,8 +9,6 @@
 
 defined('_JEXEC') or die;
 
-//JHtml::_('bootstrap.framework');
-//JHtml::_('bootstrap.loadcss', true, $this->direction);
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\HTML\HTMLHelper;
