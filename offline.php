@@ -75,7 +75,7 @@ else
 				<?php echo HTMLHelper::_('image', $app->get('offline_image'), $sitename, [], false, 0); ?>
 			<?php endif; ?>
 			<?php if ($app->get('display_offline_message', 1) == 1 && str_replace(' ', '', $app->get('offline_message')) != '') : ?>
-				<p><?php echo $app->get('offline_message'); ?></p>
+				<p><?php echo htmlspecialchars($app->get('offline_message'), ENT_QUOTES, 'UTF-8'); ?></p>
 			<?php elseif ($app->get('display_offline_message', 1) == 2) : ?>
 				<p><?php echo Text::_('JOFFLINE_MESSAGE'); ?></p>
 			<?php endif; ?>
