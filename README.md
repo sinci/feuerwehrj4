@@ -90,7 +90,7 @@ Folgende Joomla-Komponenten und Module haben eigene Overrides:
 1. Im Backend: **Inhalt → Module → Neu → Beiträge**
 2. Kategorie auswählen
 3. Unter **Erweitert → Layout**: `default` wählen
-4. Modul einer Position zuweisen (z. B. `header`)
+4. Modul der Position `main-top` zuweisen
 5. Im Modul-Override werden Bild, Kategorie und Titel als UIkit-Slideshow dargestellt
 
 ---
