@@ -65,15 +65,11 @@ $isUnpublished = ($this->item->state == ContentComponent::CONDITION_UNPUBLISHED 
 
 	<?php
 	$plain     = strip_tags($this->item->introtext);
-	$wordCount = str_word_count($plain);
-	if ($wordCount > 100) {
-		$words    = preg_split('/\s+/', $plain);
-		$cutWord  = $words[100] ?? '';
-		$pos      = $cutWord ? mb_strpos($this->item->introtext, $cutWord) : false;
-		if ($pos !== false) {
-			$this->item->introtext = mb_substr($this->item->introtext, 0, $pos) . '…';
-		}
-		$this->item->readmore = 1;
+	$words     = preg_split('/\s+/u', trim($plain));
+	if (count($words) > 100) {
+		$truncated = implode(' ', array_slice($words, 0, 100)) . '…';
+		$this->item->introtext = nl2br(htmlspecialchars($truncated, ENT_QUOTES, 'UTF-8'));
+		$this->item->readmore  = 1;
 	}
 	?>
 	<?php echo $this->item->introtext; ?>
