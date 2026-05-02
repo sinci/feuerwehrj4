@@ -31,7 +31,12 @@ $isUnpublished = ($this->item->state == ContentComponent::CONDITION_UNPUBLISHED 
 
 ?>
 
-<?php echo LayoutHelper::render('joomla.content.intro_image', $this->item); ?>
+<?php
+$articleLink = Route::_(RouteHelper::getArticleRoute($this->item->slug, $this->item->catid, $this->item->language));
+?>
+<a href="<?php echo $articleLink; ?>">
+	<?php echo LayoutHelper::render('joomla.content.intro_image', $this->item); ?>
+</a>
 
 <div class="item-content">
 	<?php if ($isUnpublished) : ?>
