@@ -13,7 +13,7 @@ use Joomla\CMS\Helper\ModuleHelper;
 
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $app->getDocument()->getWebAssetManager();
-$wa->registerAndUseStyle('mod_modules', 'mod_articles_news/template.css');
+$wa->registerAndUseStyle('mod_articles_news.template', 'mod_articles_news/template.css');
 
 if (empty($list))
 {
