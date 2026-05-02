@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site">
 	<name>feuerwehrj4</name>
-	<version>1.0</version>
-	<creationDate>February 2022</creationDate>
+	<version>6.0.0</version>
+	<creationDate>May 2026</creationDate>
 	<author>sinci</author>
 	<authorEmail>joomla.sinci@gmail.com</authorEmail>
 	<copyright>(C) 2017 Open Source Matters, Inc.</copyright>
@@ -51,15 +51,15 @@
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">
-				<field name="brand" type="radio" label="TPL_FEUERWEHRJ4_BRAND_LABEL" default="1" layout="joomla.form.field.radio.switcher" filter="boolean">
+				<field name="brand" type="radio" label="TPL_FEUERWEHRJ4_BRAND_LABEL" default="1" layout="joomla.form.field.radio.switcher">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
 				<field name="logoFile" type="media" default="" label="TPL_FEUERWEHRJ4_LOGO_LABEL" showon="brand:1" />
-				<field name="siteTitle" type="text" default="" label="TPL_FEUERWEHRJ4_TITLE" filter="string" showon="brand:1" />
-				<field name="siteDescription" type="text" default="" label="TPL_FEUERWEHRJ4_TAGLINE_LABEL" description="TPL_FEUERWEHRJ4_TAGLINE_DESC" filter="string" showon="brand:1" />
-				<field name="faviconFile" type="media" default="" label="TPL_FEUERWEHRJ4_FAVICON" description="TPL_FEUERWEHRJ4_FAVICON_DESC"/>
-				<field name="appletouchicon" type="media" default="" label="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON" description="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON_DESC"/>
+				<field name="siteTitle" type="text" default="" label="TPL_FEUERWEHRJ4_TITLE" showon="brand:1" />
+				<field name="siteDescription" type="text" default="" label="TPL_FEUERWEHRJ4_TAGLINE_LABEL" description="TPL_FEUERWEHRJ4_TAGLINE_DESC" showon="brand:1" />
+				<field name="faviconFile" type="media" default="" label="TPL_FEUERWEHRJ4_FAVICON" description="TPL_FEUERWEHRJ4_FAVICON_DESC" />
+				<field name="appletouchicon" type="media" default="" label="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON" description="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON_DESC" />
 			</fieldset>
 		</fields>
 	</config>
