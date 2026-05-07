@@ -122,10 +122,8 @@ ul.uk-subnav.uk-subnav-pill {
   padding-left: 20px;
 }
 
-.uk-label-danger,
-.uk-overlay-primary .uk-label {
+.uk-label-danger {
   background-color: var(--link-color);
-  color:var(--background-default);
 }
 
 .form-select {
@@ -424,21 +422,6 @@ form#contact-form .control-group {
 }
 
 @media (min-width: 960px) and (max-width: 1199px) {
-}
-
-/* Offcanvas: Chevron ganz rechts + Accordion */
-.uk-offcanvas-bar .nav-item.deeper.parent > a {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.uk-offcanvas-bar .uk-navbar-dropdown {
-  display: none;
-}
-
-.uk-offcanvas-bar .uk-navbar-dropdown.uk-open {
-  display: block;
 }
 
 

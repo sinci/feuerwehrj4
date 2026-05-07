@@ -71,8 +71,8 @@ $articleLink = Route::_(RouteHelper::getArticleRoute($this->item->slug, $this->i
 	<?php
 	$plain     = strip_tags($this->item->introtext);
 	$words     = preg_split('/\s+/u', trim($plain));
-	if (count($words) > 25) {
-		$truncated = implode(' ', array_slice($words, 0, 25)) . '…';
+	if (count($words) > 100) {
+		$truncated = implode(' ', array_slice($words, 0, 100)) . '…';
 		$this->item->introtext = nl2br(htmlspecialchars($truncated, ENT_QUOTES, 'UTF-8'));
 		$this->item->readmore  = 1;
 	}
